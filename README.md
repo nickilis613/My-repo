@@ -1,4 +1,4 @@
-# My House of Horrors — Edited Reader
+
 
 A static, offline-friendly reading interface containing only the professionally edited Chapters 1–300.
 
