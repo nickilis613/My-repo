@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11100f">
+    <meta name="description" content="A private reading interface for the professionally edited chapters 1–300 of My House of Horrors.">
+    <title>My House of Horrors — Edited Reader</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+    <header class="topbar">
+      <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open chapter list" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="topbar-title">
+        <span class="eyebrow">Professionally edited edition</span>
+        <strong id="compactTitle">My House of Horrors</strong>
+      </div>
+      <nav class="chapter-controls" aria-label="Chapter navigation">
+        <button class="icon-button" id="previousTop" type="button" aria-label="Previous chapter">←</button>
+        <span id="chapterCounter">1 / 300</span>
+        <button class="icon-button" id="nextTop" type="button" aria-label="Next chapter">→</button>
+      </nav>
+    </header>
+
+    <div class="app-shell">
+      <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+      <aside class="sidebar" id="sidebar" aria-label="Chapter library">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">MH</div>
+          <div>
+            <span class="eyebrow">Edited archive</span>
+            <h1>My House of Horrors</h1>
+          </div>
+        </div>
+
+        <div class="edition-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Chapters 1–300</strong>
+            <span>Edited chapters only</span>
+          </div>
+        </div>
+
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="chapterSearch" type="search" placeholder="Find a chapter…" autocomplete="off">
+        </label>
+
+        <div class="chapter-list" id="chapterList" aria-label="All edited chapters"></div>
+
+        <div class="reading-settings" aria-label="Reading settings">
+          <div class="setting-label">Reading settings</div>
+          <div class="setting-row">
+            <button id="decreaseFont" type="button" aria-label="Decrease text size">A−</button>
+            <span id="fontLabel">18 px</span>
+            <button id="increaseFont" type="button" aria-label="Increase text size">A+</button>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme">☼</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="reader" id="reader">
+        <article class="chapter" id="chapter" aria-live="polite">
+          <div class="chapter-kicker">Edited chapter <span id="chapterNumber">001</span></div>
+          <h2 id="chapterTitle">Loading chapter…</h2>
+          <div class="title-rule"><span></span></div>
+          <div class="chapter-body" id="chapterBody">
+            <p class="loading-copy">Preparing the edited archive…</p>
+          </div>
+        </article>
+
+        <nav class="bottom-navigation" aria-label="Chapter navigation">
+          <button id="previousBottom" type="button">
+            <span>←</span><span><small>Previous</small><strong id="previousLabel">Chapter 1</strong></span>
+          </button>
+          <button id="nextBottom" type="button">
+            <span><small>Next</small><strong id="nextLabel">Chapter 2</strong></span><span>→</span>
+          </button>
+        </nav>
+
+        <footer>Local edited reading edition · Chapters 1–300 only</footer>
+      </main>
+    </div>
+
+    <noscript>This reader requires JavaScript to navigate the edited chapter files.</noscript>
+    <script src="app.js" defer></script>
+  </body>
+</html>

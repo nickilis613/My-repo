@@ -1,0 +1,27 @@
+# Local caches and abandoned framework starter files
+/.npm-cache/
+/node_modules/
+/.openai/
+/app/
+/build/
+/db/
+/drizzle/
+/examples/
+/public/
+/tests/
+/worker/
+
+/drizzle.config.ts
+/eslint.config.mjs
+/next-env.d.ts
+/next.config.ts
+/package-lock.json
+/package.json
+/postcss.config.mjs
+/tsconfig.json
+/vite.config.ts
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.log
